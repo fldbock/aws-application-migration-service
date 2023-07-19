@@ -1,1 +1,1 @@
-# aws-application-migration-service
+# Demo - Application Migration Service (MGN)

@@ -1,9 +1,9 @@
 Description: "Demo Application Migration Service (MGN), this template MUST be used in us-east-1"
 Parameters:
   LatestAmiId:
-    Description: AMI for any EC2 Instances (if applicable) (default is latest Windows_Server-2019)
+    Description: AMI for any EC2 Instances (if applicable) (default is latest AmaLinux2)
     Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/ami-windows-latest/Windows_Server-2019-English-Full-Base'
+    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
 Resources:
   OnpremVPC:
     Type: AWS::EC2::VPC
@@ -14,7 +14,18 @@ Resources:
       Tags:
         - Key: Name
           Value: OnpremVPC
-  OnpremSNPrivate:
+  OnpremIGW:
+    Type: 'AWS::EC2::InternetGateway'
+    Properties:
+      Tags:
+      - Key: Name
+        Value: IGW-ONPREM
+  OnpremIGWAttachment:
+    Type: 'AWS::EC2::VPCGatewayAttachment'
+    Properties:
+      VpcId: !Ref OnpremVPC
+      InternetGatewayId: !Ref OnpremIGW
+  OnpremSNPublic:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref OnpremVPC
@@ -22,7 +33,38 @@ Resources:
       CidrBlock: 10.0.0.0/25
       Tags:
         - Key: Name
-          Value: sn-onprem-private
+          Value: OnpremSNPublic
+  OnpremRTPublic:
+    Type: 'AWS::EC2::RouteTable'
+    Properties:
+      VpcId: !Ref OnpremVPC
+      Tags:
+        - Key: Name
+          Value: ONPREM-RT-PUBLIC
+  OnpremRTPublicAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      SubnetId: !Ref OnpremSNPublic
+      RouteTableId:
+        Ref: OnpremRTPublic
+  OnpremRouteDefaultPublic:
+    Type: 'AWS::EC2::Route'
+    DependsOn: OnpremIGWAttachment
+    Properties:
+      RouteTableId:
+        Ref: OnpremRTPublic
+      DestinationCidrBlock: '0.0.0.0/0'
+      GatewayId:
+        Ref: OnpremIGW
+  OnpremSNPrivate:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref OnpremVPC
+      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      CidrBlock: 10.0.0.128/25
+      Tags:
+        - Key: Name
+          Value: OnpremSNPrivate
   OnpremRTPrivate:
     Type: 'AWS::EC2::RouteTable'
     Properties:
@@ -36,6 +78,28 @@ Resources:
       SubnetId: !Ref OnpremSNPrivate
       RouteTableId:
         Ref: OnpremRTPrivate
+  EIP:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: !Ref OnpremVPC
+  OnpremNATGW:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !Ref EIP
+      ConnectivityType: 'public'
+      SubnetId: !Ref OnpremSNPublic
+      Tags:
+      - Key: Name
+        Value: OnpremNATGW
+  OnpremRouteDefaultPrivate:
+    Type: 'AWS::EC2::Route'
+    DependsOn: OnpremIGWAttachment
+    Properties:
+      RouteTableId:
+        Ref: OnpremRTPrivate
+      DestinationCidrBlock: '0.0.0.0/0'
+      GatewayId:
+        Ref: OnpremNATGW
   OnpremVPCDefaultSG:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
@@ -196,7 +260,7 @@ Resources:
       CidrBlock: 10.0.1.0/25
       Tags:
         - Key: Name
-          Value: sn-aws-private
+          Value: OnpremSNPrivate
   AWSRTPrivate:
     Type: 'AWS::EC2::RouteTable'
     Properties:

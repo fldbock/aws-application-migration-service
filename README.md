@@ -1,6 +1,6 @@
 # Demo - Application Migration Service (MGN)
 
-In this demo, you will migrate a windows server from on premises to the cloud
+In this demo, you will migrate a linux server from on premises to the cloud
 
 The demo consists of 5 stages, each implementing additional components of the architecture
 - Stage 1 Establish Private Connectivity Between the environments (VPC Peer)

@@ -22,4 +22,3 @@ Under `Replication Server instance type` select `t2.small`
 Under `Data routing and throttling` select `Use private IP for data replication (VPN, DirectConnect, VPC peering, etc.)`
 
 Click `Save template`
-

@@ -1,7 +1,8 @@
-# Demo - Application Migration Service (MGN) - Replication Template
+# Demo - Application Migration Service (MGN) - Establish Private Connectivity Between the environments (VPC Peer)
 
-- Stage 1 Replication Template
-- Stage 2 Add Source Server
-- Stage 3 Launch Template
-- Stage 4 Test & Cutover
-- Stage 5 Cleanup
+- Stage 1 Establish Private Connectivity Between the environments (VPC Peer)
+- Stage 2 Replication Template
+- Stage 3 Add Source Server
+- Stage 4 Launch Template
+- Stage 5 Test & Cutover
+- Stage 6 Cleanup

@@ -1,4 +1,4 @@
-# Demo - Application Migration Service (MGN) - Replication Template
+# Demo - Application Migration Service (MGN) - Cleanup
 
 - Stage 1 Establish Private Connectivity Between the environments (VPC Peer)
 - Stage 2 Replication Template

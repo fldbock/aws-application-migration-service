@@ -1,6 +1,6 @@
 # Demo - Application Migration Service (MGN) - Establish Private Connectivity Between the environments (VPC Peer)
 
-- Stage 1 Establish Private Connectivity Between the environments (VPC Peer)
+- Stage 1 Establish Private Connectivity Between the environments (VPC Peer) <= `YOU ARE HERE`
 - Stage 2 Replication Template
 - Stage 3 Add Source Server
 - Stage 4 Launch Template

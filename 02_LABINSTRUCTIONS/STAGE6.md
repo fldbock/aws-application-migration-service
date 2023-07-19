@@ -5,4 +5,4 @@
 - Stage 3 Add Source Server
 - Stage 4 Launch Template
 - Stage 5 Test & Cutover
-- Stage 6 Cleanup
+- Stage 6 Cleanup <= `YOU ARE HERE`

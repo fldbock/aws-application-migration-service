@@ -4,5 +4,5 @@
 - Stage 2 Replication Template
 - Stage 3 Add Source Server
 - Stage 4 Launch Template
-- Stage 5 Test & Cutover
+- Stage 5 Test & Cutover <= `YOU ARE HERE`
 - Stage 6 Cleanup

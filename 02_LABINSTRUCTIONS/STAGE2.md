@@ -15,10 +15,12 @@ In the menu select `Replication Template` under `Settings`
 
 Click `Edit`
 
-Under `Staging area subnet` select the `sn-aws-private` subnet
+Under `Staging area subnet` select the `AWSSNPublic` subnet
 
 Under `Replication Server instance type` select `t2.small`
 
 Under `Data routing and throttling` select `Use private IP for data replication (VPN, DirectConnect, VPC peering, etc.)`
 
 Click `Save template`
+
+# Create SG's

@@ -10,7 +10,9 @@
 # STAGE 1A - Create a VPC peer between On-Premises and AWS
 
 Move to the VPC Console https://console.aws.amazon.com/vpc/home
+
 Click on `Peering Connections` under `Virtual Private Cloud`
+
 Click `Create Peering Connection`
 for `Peering connection name tag` choose `ON-PREMISES-TO-AWS`
 for `VPC (Requester)` choose `onpremVPC`
@@ -22,7 +24,7 @@ Click `Accept Request`
 
 # STAGE 1B - Create Routes on the On-premises side
 Move to the route tabes console https://console.aws.amazon.com/vpc/home?#RouteTables:sort=routeTableId
-Locate the `ONPREM-RT-PRIVATE` route table and select it using the checkbox.
+Locate the `ONPREM-RT-PUBLIC` route table and select it using the checkbox.
 Click on the `Routes` Tab.
 You're going to add a route pointing at the AWS side networking, using the VPC Peer.
 Click `Edit Routes`
@@ -33,7 +35,7 @@ The Onpremises network can now route to the AWS Network, but as data transfer re
 
 # STAGE 1C - Create Routes on the AWS side
 Move to the route tabes console https://console.aws.amazon.com/vpc/home#RouteTables:sort=routeTableId
-Locate the `AWS-RT-PRIVATE` route table and select it using the checkbox.
+Locate the `AWS-RT-PUBLIC` route table and select it using the checkbox.
 Click on the `Routes` Tab.
 You're going to add a route pointing at the AWS side networking, using the VPC Peer.
 Click `Edit Routes`

@@ -6,3 +6,16 @@
 - Stage 4 Launch Template <= `YOU ARE HERE`
 - Stage 5 Test & Cutover
 - Stage 6 Cleanup
+
+# Launch Template
+
+Move to the MGN Console https://console.aws.amazon.com/mgn/home
+
+In the menu select `Launch template` under `Settings` and click `Edit`
+
+Under Default target subnet select AWSSNPublic
+
+Under Additional security groups select AWSInstanceSG-
+
+Click Save template
+

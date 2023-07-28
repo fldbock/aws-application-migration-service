@@ -6,3 +6,11 @@
 - Stage 4 Launch Template
 - Stage 5 Test & Cutover
 - Stage 6 Cleanup <= `YOU ARE HERE`
+
+# Delete Cutover Server
+
+# MGN User
+
+# Delete SG's?
+
+# Delete Cloudformation Stack

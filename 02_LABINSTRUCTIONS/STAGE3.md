@@ -50,6 +50,8 @@ Go to `Instances`, select the OnpremServer instance and click <kbd>Connect</kbd>
 
 Select `EC2 Instance Connect` and click <kbd>Connect</kbd>
 
+touch secretfile.txt
+
 Download the installer using this command:
 ```
 sudo wget -O ./aws-replication-installer-init https://aws-application-migration-service-us-east-1.s3.us-east-1.amazonaws.com/latest/linux/aws-replication-installer-init

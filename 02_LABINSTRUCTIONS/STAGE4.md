@@ -7,15 +7,18 @@
 - Stage 5 Test & Cutover
 - Stage 6 Cleanup
 
-# Launch Template
+# EC2 Launch Template
 
-Move to the MGN Console https://console.aws.amazon.com/mgn/home
+Click on your source server, in the menu click on Launch settings, under EC2 Launch Template click Modify
 
-In the menu select `Launch template` under `Settings` and click `Edit`
+Pick a `Template version description`, I'll use  `template-v1`
 
-Under Default target subnet select AWSSNPublic
+Select awssnpublic subnet
 
-Under Additional security groups select AWSInstanceSG-
+Under `Additional security groups` select `AWSInstanceSG-`
 
-Click Save template
+Open `Advanced network configuration` and set the `Auto-assign public IP` to `enable`
 
+Click `Create template version`
+
+Select the `launch template` click on `actions` then click on `Set Default version` to set the default version to the latest version

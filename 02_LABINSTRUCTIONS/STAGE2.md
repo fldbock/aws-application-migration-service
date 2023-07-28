@@ -49,7 +49,9 @@ Go to `Instances`, select the OnpremServer instance and click <kbd>Connect</kbd>
 
 Select `EC2 Instance Connect` and click <kbd>Connect</kbd>
 
+```
 touch secretfile.txt
+```
 
 Download the installer using this command:
 ```

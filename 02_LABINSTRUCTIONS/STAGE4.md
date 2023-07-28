@@ -3,8 +3,8 @@
 - Stage 1 Replication Template
 - Stage 2 Add Source Server
 - Stage 3 Launch Template
-- Stage 4 Test & Cutover
-- Stage 5 Cleanup <= `YOU ARE HERE`
+- Stage 4 Test & Cutover <= `YOU ARE HERE`
+- Stage 5 Cleanup
 
 # Lifecycle: Not ready
 
@@ -16,28 +16,28 @@ In the `Migration dashboard` tab you will see that the sevice is completing `Rep
 
 # Lifecycle: Test in progress
 
-Click Test and cutover, Launch and then Launch test instance
+Click `Test and cutover`, `Launch` and then `Launch test instance`
 
 Wait till the test instance is launched and passed the 2 status checks, first there will be a conversion server
 
-Select the testserver, click connect
+Select the testserver, click `connect`
 
 EC2 Instance connect
 
-Type ec2-user instead of root
+Type `ec2-user` instead of `root`
 
-ls
+Type `ls`
 
 # Lifecycle: Cutover
 
-Click Test and cutover, Launch and then Launch cutover instance
+Click `Test and cutover`, `Launch` and then `Launch cutover instance`
 
 Wait till the cutover instance is launched and passed the 2 status checks
 
-Select the cutoverserver, click connect
+Select the cutoverserver, click `connect`
 
 EC2 Instance connect
 
-Type ec2-user instead of root
+Type `ec2-user` instead of `root`
 
-ls
+Type `ls`

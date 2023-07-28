@@ -1,44 +1,15 @@
-# Demo - Application Migration Service (MGN) - Test & Cutover 
+# Demo - Application Migration Service (MGN) - Cleanup
 
-- Stage 1 Establish Private Connectivity Between the environments (VPC Peer)
-- Stage 2 Replication Template
-- Stage 3 Add Source Server
-- Stage 4 Launch Template
-- Stage 5 Test & Cutover <= `YOU ARE HERE`
-- Stage 6 Cleanup
+- Stage 1 Replication Template 
+- Stage 2 Add Source Server
+- Stage 3 Launch Template
+- Stage 4 Test & Cutover
+- Stage 5 Cleanup <= `YOU ARE HERE`
 
-# Lifecycle: Not ready
+# Delete Cutover Server
 
-Move to the MGN Console https://console.aws.amazon.com/mgn/home
+# MGN User
 
-In the menu select `Source servers` and click on your source server
+# Delete SG's?
 
-In the `Migration dashboard` tab you will see that the sevice is completing `Replication initiation steps` wait till the lifecycle stage becomes `Ready for testing`
-
-# Lifecycle: Test in progress
-
-Click Test and cutover, Launch and then Launch test instance
-
-Wait till the test instance is launched and passed the 2 status checks, first there will be a conversion server
-
-Select the testserver, click connect
-
-EC2 Instance connect
-
-Type ec2-user instead of root
-
-ls
-
-# Lifecycle: Cutover
-
-Click Test and cutover, Launch and then Launch cutover instance
-
-Wait till the cutover instance is launched and passed the 2 status checks
-
-Select the cutoverserver, click connect
-
-EC2 Instance connect
-
-Type ec2-user instead of root
-
-ls
+# Delete Cloudformation Stack

@@ -1,24 +1,43 @@
-# Demo - Application Migration Service (MGN) - Launch Template
+# Demo - Application Migration Service (MGN) - Test & Cutover 
 
-- Stage 1 Establish Private Connectivity Between the environments (VPC Peer)
-- Stage 2 Replication Template
-- Stage 3 Add Source Server
-- Stage 4 Launch Template <= `YOU ARE HERE`
-- Stage 5 Test & Cutover
-- Stage 6 Cleanup
+- Stage 1 Replication Template
+- Stage 2 Add Source Server
+- Stage 3 Launch Template
+- Stage 4 Test & Cutover
+- Stage 5 Cleanup <= `YOU ARE HERE`
 
-# EC2 Launch Template
+# Lifecycle: Not ready
 
-Click on your source server, in the menu click on Launch settings, under EC2 Launch Template click Modify
+Move to the MGN Console https://console.aws.amazon.com/mgn/home
 
-Pick a `Template version description`, I'll use  `template-v1`
+In the menu select `Source servers` and click on your source server
 
-Select awssnpublic subnet
+In the `Migration dashboard` tab you will see that the sevice is completing `Replication initiation steps` wait till the lifecycle stage becomes `Ready for testing`
 
-Under `Additional security groups` select `AWSInstanceSG-`
+# Lifecycle: Test in progress
 
-Open `Advanced network configuration` and set the `Auto-assign public IP` to `enable`
+Click Test and cutover, Launch and then Launch test instance
 
-Click `Create template version`
+Wait till the test instance is launched and passed the 2 status checks, first there will be a conversion server
 
-Select the `launch template` click on `actions` then click on `Set Default version` to set the default version to the latest version
+Select the testserver, click connect
+
+EC2 Instance connect
+
+Type ec2-user instead of root
+
+ls
+
+# Lifecycle: Cutover
+
+Click Test and cutover, Launch and then Launch cutover instance
+
+Wait till the cutover instance is launched and passed the 2 status checks
+
+Select the cutoverserver, click connect
+
+EC2 Instance connect
+
+Type ec2-user instead of root
+
+ls

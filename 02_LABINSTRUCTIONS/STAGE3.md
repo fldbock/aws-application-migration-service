@@ -10,16 +10,16 @@
 
 Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
 
-Click on your source server, in the menu click on Launch settings, under EC2 Launch Template click Modify
+Click on your source server, in the menu select `Launch settings`, under `EC2 Launch Template` click <kbd>Modify</kbd>
 
-Pick a `Template version description`, I'll use  `template-v1`
+Pick a `Template version description`, I'll use `template-v1`
 
-Select awssnpublic subnet
+Select the `AWSSNPublic` subnet
 
 Under `Additional security groups` select `AWSInstanceSG-`
 
 Open `Advanced network configuration` and set the `Auto-assign public IP` to `enable`
 
-Click `Create template version`
+Click <kbd>Create template version</kbd>
 
-Select the `launch template` click on `actions` then click on `Set Default version` to set the default version to the latest version
+Select the `launch template` click on <kbd>actions</kbd> then click on <kbd>Set Default version</kbd> to set the default version to the latest version

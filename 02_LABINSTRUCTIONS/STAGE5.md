@@ -10,11 +10,11 @@
 
 Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
 
-In the menu click on `Source servers`, click on our source server 
+In the menu select `Source servers`, click on our source server 
 
-Click `ActionsE` and then `Disconnect from service` and then `Ok`
+Click <kbd>Actions</kbd> and then <kbd>Disconnect from service</kbd> and then <kbd>Ok</kbd>
 
-Click `Actions` and then `Mark as archived` and then `Archive`
+Click <kbd>Actions</kbd> and then <kbd>Mark as archived</kbd> and then <kbd>Archive</kbd>
 
 # Terminate EC2 Instances
 
@@ -34,12 +34,12 @@ Go to `Security Groups` and delete the security groups created by AWS Applicatio
 
 Head to the IAM dashboard: [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home)
 
-In the menu pick `Users` under `Access management`
+In the menu select `Users` under `Access management`
 
-Select the `MGNUser` and click `delete`, confirm that you want to delete by typing the name and click `Delete` again
+Select the `MGNUser` and click <kbd>delete</kbd>, confirm that you want to delete by typing the name and click <kbd>Delete</kbd> again
 
 # Delete Cloudformation Stack
 
 Head to the Cloudformation dashboard: [https://console.aws.amazon.com/cloudformation/home](https://console.aws.amazon.com/cloudformation/home)
 
-Click on our stack and click `Delete`, `Delete`
+Click on your one-click deployment stack and delete it

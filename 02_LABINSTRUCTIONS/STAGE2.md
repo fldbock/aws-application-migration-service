@@ -8,25 +8,25 @@
 
 # Create MGN USER
 
-Move to the IAM Console https://console.aws.amazon.com/iam/home
+Head to the IAM dashboard: [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home)
 
 In the menu select `Users` under `Access management` and click `Add users`
 
 Pick a `User name`, I'll use `MGNUser`
 
-Click `Next`
+Click <kbd>Next</kbd>
 
 Under `Permission options select Attach policies directly` and select the `AWSApplicationMigrationAgentInstallationPolicy`
 
-Click `Next` and `Create user`
+Click <kbd>Next</kbd> and <kbd>Create user</kbd>
 
-Click on the user, go to the `Security credentials tab` and click `Create access key` under `Access keys`
+Click on the user, go to the `Security credentials tab` and select `Create access key` under `Access keys`
 
 For `Use case` select `Application running outside of AWS`
 
-Click `Next` and `Create access key`
+Click <kbd>Next</kbd> and <kbd>Create access key</kbd>
 
-Click `Download .csv file` and then `Done` (don't delete this csv file because we need it for later)
+Click <kbd>Download .csv file</kbd> and then <kbd>Done</kbd> (don't delete this csv file because we need it for later)
 
 
 # Add Source Server

@@ -66,4 +66,4 @@ sudo chmod +x aws-replication-installer-init; sudo ./aws-replication-installer-i
 
 Wait for the AWS Replication Agent to finish downloading and installing
 
-We now have the source server (OnpremServer) connected to our MGN Dashboard ready for replication. It will take around 20 minutes to replicate our server so in the next stage we will configure the launch template. 
+We now have the source server (OnpremServer) connected to our MGN Dashboard and ready for replication. It will take around 20 minutes for the initial replication of our server, so in the next stage we will configure the launch template. 

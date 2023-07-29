@@ -28,7 +28,7 @@ Go to `Volumes` and delete the volumes created by AWS Application Migration Serv
 
 Go to `snapshots` and delete the snapshots created by AWS Application Migration Service
 
-Go to `Security Groups` and delete the security groups created by AWS Application Migration Service
+Go to `Security Groups` and delete the security groups created by AWS Application Migration Service and one extra
 
 # MGN User
 

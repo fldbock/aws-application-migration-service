@@ -6,7 +6,7 @@
 - Stage 4 Test & Cutover
 - Stage 5 Cleanup
 
-# Create MGN USER
+# Create MGNUser
 
 Head to the IAM dashboard: [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home)
 
@@ -41,7 +41,7 @@ Keep `Replicate all disks` selected
 
 Under `provide the required credentials` fill in the credentials from the csv file you downloaded earlier
 
-# EC2 Instance Connect
+# Aws-replication-installer
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  

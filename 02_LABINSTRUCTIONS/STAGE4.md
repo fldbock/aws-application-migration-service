@@ -12,21 +12,23 @@ Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://con
 
 In the menu select `Source servers` and click on your source server
 
-In the `Migration dashboard` tab you will see that the sevice is completing `Replication initiation steps` wait till the lifecycle stage becomes `Ready for testing`
+In the `Migration dashboard` tab you will see that the service is completing the `Replication initiation steps`, wait until the lifecycle stage becomes `Ready for testing`
 
 # Lifecycle: Ready for testing/Test in progress
 
-Click `Test and cutover`, `Launch test instance` and then `Launch` 
+Click <kbd>Test and cutover</kbd>, <kbd>Launch test instance</kbd> and then <kbd>Launch</kbd> 
 
-Wait till the test instance is launched and passed the 2 status checks, first there will be a conversion server
+Wait until the test instance is launched and passed the 2 status checks, first there will be a conversion server
 
-Select the testserver, click `connect`
+Select the testserver and click <kbd>connect</kbd>
 
-EC2 Instance connect
+Select `EC2 Instance connect`
 
-Under `User name` Type `ec2-user` instead of `root`
+Under `User name` type `ec2-user` instead of `root`
 
-Type `ls`
+Click <kbd>Connect</kbd>
+
+Type `ls` and press enter
 
 You should see the secretfile.txt, which verifies we replicated the linux server
 
@@ -34,18 +36,20 @@ Go back to the source server dashboard and click Test and cutover and then Mark 
 
 # Lifecycle: Ready for Cutover/Cutover
 
-Click `Test and cutover`, `Launch cutover instance` and then `Launch` 
+Click <kbd>Test and cutover</kbd>, <kbd>Launch cutover instance</kbd> and then <kbd>Launch</kbd> 
 
-Wait till the test instance is launched and passed the 2 status checks, first there will be a conversion server
+Wait until the test instance is launched and passed the 2 status checks, first there will be a conversion server
 
 Select the cutoverserver, click `connect`
 
-EC2 Instance connect
+Select `EC2 Instance connect`
 
-Under `User name` Type `ec2-user` instead of `root`
+Under `User name` type `ec2-user` instead of `root`
 
-Type `ls`
+Type `ls` and press enter
 
 # Lifecycle: Cutover complete
 
-Click `Test and cutover`, `Finalize cutover` and then `something else`
+Click <kbd>Test and cutover</kbd>, <kbd>Finalize cutover</kbd> and then <kbd>Finalize cutover</kbd>
+
+We now have successfully replicated our linux server for on premisses to the cloud. In the next stage we will delete all the resources we have created.

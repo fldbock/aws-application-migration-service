@@ -18,9 +18,9 @@ In the `Migration dashboard` tab you will see that the service is completing the
 
 Click <kbd>Test and cutover</kbd>, <kbd>Launch test instance</kbd> and then <kbd>Launch</kbd> 
 
-Wait until the test instance is launched and passed the 2 status checks, first there will be a conversion server
+First a conversion server will be launched, then the test server will launch. Wait until the test server is active and has passed both status checks
 
-Select the testserver and click <kbd>connect</kbd>
+Select the `testserver` and click <kbd>connect</kbd>
 
 Select `EC2 Instance connect`
 
@@ -30,23 +30,25 @@ Click <kbd>Connect</kbd>
 
 Type `ls` and press enter
 
-You should see the secretfile.txt, which verifies we replicated the linux server
+You should see the `secretfile.txt`, which verifies we replicated the linux server
 
-Go back to the source server dashboard and click Test and cutover and then Mark as “Ready for cutover“
+Go back to the source server dashboard and click <kbd>Test and cutover</kbd> and then <kbd>Mark as “Ready for cutover“</kbd>
 
 # Lifecycle: Ready for Cutover/Cutover
 
 Click <kbd>Test and cutover</kbd>, <kbd>Launch cutover instance</kbd> and then <kbd>Launch</kbd> 
 
-Wait until the test instance is launched and passed the 2 status checks, first there will be a conversion server
+First a conversion server will be launched, then the cutover server will launch. Wait until the cutover server is active and has passed both status checks
 
-Select the cutoverserver, click `connect`
+Select the `cutoverserver`, click `connect`
 
 Select `EC2 Instance connect`
 
 Under `User name` type `ec2-user` instead of `root`
 
 Type `ls` and press enter
+
+You should see the `secretfile.txt`, which verifies that the cutover was performed correctly
 
 # Lifecycle: Cutover complete
 

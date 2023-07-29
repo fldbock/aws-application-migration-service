@@ -12,7 +12,7 @@ Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://con
 
 In the menu select `Replication Template` under `Settings`
 
-Click `Edit`
+Click <kbd>Edit</kbd>
 
 Under `Staging area subnet` select the `AWSSNPublic` subnet
 
@@ -21,3 +21,5 @@ Under `Replication Server instance type` select `t2.small`
 Under `Data routing and throttling` select `Create public IP`
 
 Click `Save template`
+
+We now have configured our replication template which will instruct how our source server will be replicated. In the next stage we will connect our source server to the MGN sevice by installing the aws replication agent on the source server.

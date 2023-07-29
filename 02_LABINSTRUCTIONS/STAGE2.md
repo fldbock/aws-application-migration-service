@@ -1,5 +1,7 @@
 # Demo - Application Migration Service (MGN) - Add Source Server
 
+![Architecture](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE2.png)
+
 - Stage 1 Replication Template
 - Stage 2 Add Source Server <= `YOU ARE HERE`
 - Stage 3 Launch Template

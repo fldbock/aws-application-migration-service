@@ -1,5 +1,7 @@
 # Demo - Application Migration Service (MGN) - Test & Cutover 
 
+![Architecture](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE4.png)
+
 - Stage 1 Replication Template
 - Stage 2 Add Source Server
 - Stage 3 Launch Template

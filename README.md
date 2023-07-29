@@ -9,6 +9,8 @@ The demo consists of 5 stages, each implementing additional components of the ar
 - Stage 4 Test & Cutover
 - Stage 5 Cleanup
 
+![Architecture](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE4.png)
+
 ## 1-Click Installs (DO THIS FIRST)
 
 Make sure you are logged into AWS and in `us-east-1`

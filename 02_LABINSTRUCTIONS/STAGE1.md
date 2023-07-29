@@ -22,4 +22,4 @@ Under `Data routing and throttling` select `Create public IP`
 
 Click `Save template`
 
-We now have configured our replication template which will instruct how our source server will be replicated. In the next stage we will connect our source server to the MGN sevice by installing the aws replication agent on the source server.
+We now have configured our replication template which will instruct how our source server will be replicated. In the next stage we will connect the source server (OnpremServer) to the MGN sevice by installing the aws replication agent on the source server.

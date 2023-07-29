@@ -8,6 +8,8 @@
 
 # EC2 Launch Template
 
+Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
+
 Click on your source server, in the menu click on Launch settings, under EC2 Launch Template click Modify
 
 Pick a `Template version description`, I'll use  `template-v1`

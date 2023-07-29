@@ -8,7 +8,7 @@
 
 # Delete source server
 
-Move to the MGN Console https://console.aws.amazon.com/mgn/home
+Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
 
 In the menu click on `Source servers`, click on our source server 
 
@@ -18,7 +18,7 @@ Click `Actions` and then `Mark as archived` and then `Archive`
 
 # Terminate EC2 Instances
 
-Move to the EC2 Console https://console.aws.amazon.com/ec2/home
+Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
 
 Terminate the AWS Application Migration Service Replication Server and the migrated server ip-10-0-0-22.ec2.internal
 
@@ -32,7 +32,7 @@ Go to `Security Groups` and delete the security groups created by AWS Applicatio
 
 # MGN User
 
-Move to the IAM Console https://console.aws.amazon.com/iam/home
+Head to the IAM dashboard: [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home)
 
 In the menu pick `Users` under `Access management`
 
@@ -40,6 +40,6 @@ Select the `MGNUser` and click `delete`, confirm that you want to delete by typi
 
 # Delete Cloudformation Stack
 
-Move to the Cloudformation Console https://console.aws.amazon.com/cloudformation/home
+Head to the Cloudformation dashboard: [https://console.aws.amazon.com/cloudformation/home](https://console.aws.amazon.com/cloudformation/home)
 
 Click on our stack and click `Delete`, `Delete`

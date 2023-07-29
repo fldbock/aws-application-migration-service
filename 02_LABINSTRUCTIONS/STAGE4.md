@@ -8,7 +8,7 @@
 
 # Lifecycle: Not ready
 
-Move to the MGN Console https://console.aws.amazon.com/mgn/home
+Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
 
 In the menu select `Source servers` and click on your source server
 

@@ -31,7 +31,7 @@ Click `Download .csv file` and then `Done` (don't delete this csv file because w
 
 # Add Source Server
 
-Move to the MGN Console https://console.aws.amazon.com/mgn/home
+Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
 
 In the menu select `Source servers` and click `Add server`
 

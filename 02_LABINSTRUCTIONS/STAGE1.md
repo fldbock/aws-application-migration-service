@@ -8,11 +8,19 @@
 - Stage 4 Test & Cutover
 - Stage 5 Cleanup
 
+# Set up MGN service (only applicable if you have not used MGN before on your aws account)
+
+Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
+
+Click <kbd>Get started</kbd>
+
+Click <kbd>Set up service</kbd>
+
 # Replication Template
 
 Head to the MGN dashboard: [https://console.aws.amazon.com/mgn/home](https://console.aws.amazon.com/mgn/home) 
 
-In the menu select `Replication Template` under `Settings`
+In the menu select `Replication template` under `Settings`
 
 Click <kbd>Edit</kbd>
 

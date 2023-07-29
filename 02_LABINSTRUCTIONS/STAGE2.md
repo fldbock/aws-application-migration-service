@@ -22,7 +22,7 @@ Under `Permission options`, select `Attach policies directly` and select the `AW
 
 Click <kbd>Next</kbd> and <kbd>Create user</kbd>
 
-Click on the user, go to the `Security credentials tab` and select `Create access key` under `Access keys`
+Click on the user, go to the `Security credentials` tab and click <kbd>Create access key</kbd> under `Access keys`
 
 For the `Use case` select `Application running outside of AWS`
 
@@ -47,7 +47,7 @@ Under `provide the required credentials` fill in the credentials from the csv fi
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
  
-Go to `Instances`, select the OnpremServer instance and click <kbd>Connect</kbd>
+Go to `Instances`, select the `OnpremServer` instance and click <kbd>Connect</kbd>
 
 Select `EC2 Instance Connect` and click <kbd>Connect</kbd>
 
@@ -61,7 +61,7 @@ Download the installer using this command:
 sudo wget -O ./aws-replication-installer-init https://aws-application-migration-service-us-east-1.s3.us-east-1.amazonaws.com/latest/linux/aws-replication-installer-init
 ```
 
-Copy and input the command below into the command line on your source server, you'll have to fill in the `ACCESSKEYID` and `SECRETACCESSKEY` of the MGNUser we created earlier.
+Copy and input the command below into the command line on your source server, you'll have to fill in the `REGION`, `ACCESSKEYID` and `SECRETACCESSKEY` of the MGNUser we created earlier.
 ```
 sudo chmod +x aws-replication-installer-init; sudo ./aws-replication-installer-init --region REGION --aws-access-key-id ACCESSKEYID --aws-secret-access-key SECRETACCESSKEY --no-prompt
 ```

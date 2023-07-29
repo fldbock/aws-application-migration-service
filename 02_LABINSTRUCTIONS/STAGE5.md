@@ -20,23 +20,22 @@ Click <kbd>Actions</kbd>, <kbd>Mark as archived</kbd> and then <kbd>Archive</kbd
 
 Head to the EC2 dashboard: [https://console.aws.amazon.com/ec2/home](https://console.aws.amazon.com/ec2/home)
 
-Terminate the AWS Application Migration Service Replication Server and the migrated server `ip-PRIVATEIP.ec2.internal`
+In the menu select `Instances` and terminate the migrated server `ip-PRIVATEIP.ec2.internal`
 
 Wait till they are terminated
 
-Go to `Volumes` and delete the volumes created by AWS Application Migration Service (including the `ip-PRIVATEIP.ec2.internal` volume)
+In the menu select `Volumes` under `Elastic Block Store` and delete the volumes created by AWS Application Migration Service (including the `ip-PRIVATEIP.ec2.internal` volume)
 
-Go to `snapshots` and delete the snapshots created by AWS Application Migration Service
+In the menu select `Snapshots` under `Elastic Block Store` and delete the snapshots created by AWS Application Migration Service
 
-Go to `Security Groups` and delete the security groups created by AWS Application Migration Service and one extra
-
+In the menu select `Security Groups` under `Network & Security` and delete the security groups created by AWS Application Migration Service
 # MGN User
 
 Head to the IAM dashboard: [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home)
 
 In the menu select `Users` under `Access management`
 
-Select the `MGNUser` and click <kbd>delete</kbd>, confirm that you want to delete by typing the name and click <kbd>Delete</kbd> again
+Select the `MGNUser` and click <kbd>Delete</kbd>, confirm that you want to delete by typing the name and click <kbd>Delete</kbd> again
 
 # Delete Cloudformation Stack
 

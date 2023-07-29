@@ -25,9 +25,9 @@ Make sure you are logged into AWS and in `us-east-1`
 
 ## Architecture Diagrams
 
-- [Stage1 - PNG]
-- [Stage2 - PNG]
-- [Stage3 - PNG]
-- [Stage4 - PNG]
+- [Stage1 - PNG](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE1.png)
+- [Stage2 - PNG](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE2.png)
+- [Stage3 - PNG](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE3.png)
+- [Stage4 - PNG](https://github.com/fldbock/aws-application-migration-service/blob/main/02_LABINSTRUCTIONS/STAGE4.png)
 
 
